@@ -1,22 +1,30 @@
-# Capstone
+# Unsupervised Image Clustering using ConvNets and KMeans algorithms
 
-The project for this code should be run in the same folder where you place the animal_images folder containing the dataset.
-There is no need for setup aside from installing the libraries below at the latest versions.
+This is my capstone project for [Udacity's Machine Learing Engineer Nanodegree](https://www.udacity.com/course/machine-learning-engineer-nanodegree--nd009 "Udacity Machine Learning Engineer Nanodegree").
 
-## Python
+- For a full description of the project proposal, please see [proposal.pdf](proposal.pdf).
 
-Python is v3.6
+- For a full report and discussion of the project and its results, please see [Report.pdf](Report.pdf).
 
-## Libraries needed to run code
+- Project code is in [capstone.ipynb](capstone.ipynb)
 
-time
-os, os.path
-random
-cv2
-glob
-keras
-matplotlib
-sklearn
-pandas
-numpy
-tensorflow
+## Brief Description
+
+I theorised that we can use KMeans clustering to seperate unlabelled images of different entitites after using ConvNets to transform them into a more meaningful representation. 
+
+I use the convolutional layers of Keras's VGGNet model with ImageNet weights to transform cat and dog images. I then use Principal Component Analysis (PCA) for dimensionality reduction, before passing the new representation to a KMeans algorithm for seperation (labelling).
+
+This is implemented in [capstone.ipynb](capstone.ipynb) where you can find more details about what the code is achieving.
+
+Results have been successful with up to 97.7% accuracy achieved.
+
+## Libraries you will need
+#### All code is in Python 3.6.
+
+- cv2
+- keras
+- matplotlib
+- numpy
+- pandas
+- sklearn
+- tensorflow

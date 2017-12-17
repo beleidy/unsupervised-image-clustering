@@ -12,7 +12,7 @@ This is my capstone project for [Udacity's Machine Learing Engineer Nanodegree](
 
 I theorised that we can use KMeans clustering to seperate unlabelled images of different entitites after using ConvNets to transform them into a more meaningful representation. 
 
-I use the convolutional layers of Keras's VGGNet model with ImageNet weights to transform cat and dog images. I then use Principal Component Analysis (PCA) for dimensionality reduction, before passing the new representation to a KMeans algorithm for seperation (labelling).
+I use the convolutional layers of Keras's VGGNet model with ImageNet weights to transform cat and dog images. I then use Principal Component Analysis (PCA) for dimensionality reduction, before passing the new representation to a KMeans clustering algorithm for seperation (labelling).
 
 This is implemented in [capstone.ipynb](capstone.ipynb) where you can find more details about what the code is achieving.
 
